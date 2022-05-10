@@ -90,6 +90,20 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   text-transform: uppercase;
+  overflow: hidden;
+}
+
+#main .wrap .slogan-title h2 span {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: inline-block;
+  -webkit-transform: translateY(100%) rotate(45deg);
+          transform: translateY(100%) rotate(45deg);
+}
+
+#main .wrap .slogan-title h2 span.on {
+  -webkit-transform: translateY(0%) rotate(0deg);
+          transform: translateY(0%) rotate(0deg);
 }
 
 @media all and (max-width: 1200px) {

@@ -79,6 +79,15 @@ $maxinnerpadding : 3.5%;
                 color: #fff;
                 transition: all 0.5s ease;
                 text-transform: uppercase;
+                overflow: hidden;
+                span{
+                    transition: all 0.5s ease;
+                    display: inline-block;
+                    transform: translateY(100%) rotate(45deg);;
+                    &.on{
+                        transform: translateY(0%) rotate(0deg);;
+                    }
+                }
             }
             @media all and (max-width:1200px){
                 svg{
@@ -400,10 +409,6 @@ $maxinnerpadding : 3.5%;
             &::before{
                 height: 101%;
                 filter: invert(0%);
-            }
-            a{
-                span{
-                }
             }
         }
         a{
