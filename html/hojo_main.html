@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/font/ITCAvantGardeStd.css">
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../assets/js/common.js"></script>
+
 
 
     <title>HOJO</title>
@@ -35,25 +34,7 @@
                 <h2 class="title-one">GOOD DESIRE</h2>
                 <h2 class="title-two">FOR GOOD DESIGN</h2>
                 <script>
-                    function textaim(el, ch){
-                        let textarr = [...$(el).text()];
-                        $(el).text('');
 
-                            $.each(textarr, function(index, item){
-                                $(el).append(`<span>${item}</span>`);
-                                setTimeout(function(){
-                                    $(`${el} ${ch}`).eq(index).addClass('on');
-                                    if(item == " "){
-                                        $(`${el} ${ch}`).eq(index).css('padding', '10px');
-                                    }
-                                } , 100 * index );
-                                console.log($(`${el} ${ch}`).eq(index).text());
-                            });
-
-                    }
-
-                    textaim('.slogan-title .title-one' , 'span' );
-                    textaim('.slogan-title .title-two', 'span' );
                 </script>
             </div>
             <div class="start-self-intro">
@@ -180,5 +161,6 @@
             <span>behance</span>
         </div>
     </footer>
+    <script src="../assets/js/common.js"></script>
 </body>
 </html>
